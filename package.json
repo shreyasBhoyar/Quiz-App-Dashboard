@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
 
-  "proxy" : "https://quiz-app-production-cca9.up.railway.app",
+  "proxy" : "https://quiz-app-production-cca9.up.railway.app/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
