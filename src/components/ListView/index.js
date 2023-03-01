@@ -30,7 +30,7 @@ function ListQuiz() {
         size="40"
         style={{outline:"none"}}
       />
-      {Quizzes.length > 0 &&
+      {Quizzes && Quizzes.length > 0 &&
         Quizzes.slice(0)
           .reverse()
           .filter((quiz) => {
