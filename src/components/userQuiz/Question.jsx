@@ -145,7 +145,7 @@ const Question = (props) => {
       denyButtonText: "No",
     }).then((result) => {
       if (result.isConfirmed) {
-        let url = `/users/${props.userid}/quiz/${params.id}`;
+        let url = `https://quiz-app-production-cca9.up.railway.app/users/${props.userid}/quiz/${params.id}`;
         axios
           .post(url, userQuiz)
           .then((res) => {

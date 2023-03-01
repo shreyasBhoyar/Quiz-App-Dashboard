@@ -12,7 +12,7 @@ const QuizStats = () => {
   const [quizStats, setQuizStats] = useState({});
   const [userResult, setUserResult] = useState([]);
   useEffect(() => {
-    let url = `/reports/${params.id}`;
+    let url = `https://quiz-app-production-cca9.up.railway.app/reports/${params.id}`;
     axios
       .get(url)
       .then((res) => {

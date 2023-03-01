@@ -19,7 +19,7 @@ const PreviewQuiz = () => {
     useEffect(() => {
         setWindowUrl(window.location.href)
         console.log(window.location.href.split("/")[4])
-        let url = `/users/quiz/${params.id}`;
+        let url = `https://quiz-app-production-cca9.up.railway.app/users/quiz/${params.id}`;
         axios.get(url)
             .then((res) => {
                 setQuizData({ ...(res.data.data) })
@@ -45,7 +45,7 @@ const PreviewQuiz = () => {
             let data = {
               username: modalName,
             };
-            axios.post("/users", data).then((res) => {
+            axios.post("https://quiz-app-production-cca9.up.railway.app/users", data).then((res) => {
               let userId = res.data.data._id;
               setUserID(userId);
               let quizid = params.id;

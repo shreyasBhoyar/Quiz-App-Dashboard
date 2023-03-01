@@ -27,7 +27,7 @@ const [addQuestions,setAddQuestions] = useState(true)
   };
 
   useEffect(()=>{
-    axios.get(`/quizzes/${quizId}`).then((res)=>{
+    axios.get(`https://quiz-app-production-cca9.up.railway.app/quizzes/${quizId}`).then((res)=>{
       setOldQuizData(res.data.data)
       setQuestions(res.data.data.questions)
     })
@@ -204,7 +204,7 @@ const [addQuestions,setAddQuestions] = useState(true)
     }
     if (uniqueIds.length === quizData.questions.length) {
       axios
-        .put(`/quizzes/${quizId}`, quizData)
+        .put(`https://quiz-app-production-cca9.up.railway.app/quizzes/${quizId}`, quizData)
         .then((res) => {
           Swal.fire({
             icon: "success",

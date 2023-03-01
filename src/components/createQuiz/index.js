@@ -149,7 +149,7 @@ const CreateQuiz = () => {
 
     if (uniqueIds.length === quizData.questions.length) {
       axios
-        .post("/quizzes", quizData)
+        .post("https://quiz-app-production-cca9.up.railway.app/quizzes", quizData)
         .then((res) => {
           Swal.fire({
             icon: "success",

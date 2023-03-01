@@ -15,7 +15,7 @@ const ResultPage = () => {
   let params = useParams();
   let resultID = params.id;
   useEffect(() => {
-    axios.get(`/users/result/${resultID}`).then((res) => {
+    axios.get(`https://quiz-app-production-cca9.up.railway.app/users/result/${resultID}`).then((res) => {
       setUserResult(res.data.data);
     });
   }, []);
