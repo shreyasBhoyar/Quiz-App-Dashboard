@@ -9,7 +9,7 @@ function ListQuiz() {
 
   useEffect(() => {
     axios
-      .get("/quizzes")
+      .get("https://quiz-app-production-cca9.up.railway.app/quizzes")
       .then((res) => {
         setQuizzes(res.data.data);
       })
